@@ -1,0 +1,6 @@
+/* In css modules do not add styles by tag name 
+they will went global */
+.description {
+    font-style: italic;
+    color: chocolate;
+}

@@ -1,10 +1,13 @@
 import style from './NavigationItem.module.css';
 
-function NavigationItem(props) {
+function NavigationItem({
+    children,
+    href
+}) {
     return(
         <li className={style.navigationListItem}>
-            <a href={props.href}>
-                {props.children}
+            <a href={href}>
+                {children}
             </a>
         </li>
     );

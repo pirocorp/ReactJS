@@ -1,22 +1,34 @@
-import style from './Menu.module.css'
+import { useState } from 'react';
 
-import MenuItem from './MenuItem'
+import MenuItem from './MenuItem';
+import { MENU_ITEMS } from './MenuConstants';
+
+import style from './Menu.module.css';
+
 
 function Menu() {
+    // first element is the value to be preserved
+    // second element is a function which changes the value
+    // default value can be passed to useState function
+    const [currentItem, setCurrentItem] = useState();
+
     return(
         <aside className={style.menu}>
             <ul>
-                <MenuItem href="#">Going to 1</MenuItem>
-                <MenuItem href="#">Going to 2</MenuItem>
-                <MenuItem href="#">Going to 3</MenuItem>
-                <MenuItem href="#">Going to 4</MenuItem>
-                <MenuItem href="#">Going to 5</MenuItem>
-                <MenuItem href="#">Going to 6</MenuItem>
-                <MenuItem href="#">Going to 7</MenuItem>
-                <MenuItem href="#">Going to 8</MenuItem>
-                <MenuItem href="#">Going to 9</MenuItem>
-                <MenuItem href="#">Going to 10</MenuItem>
-                <MenuItem href="#">Going to 11</MenuItem>
+                {
+                    MENU_ITEMS.map(m => 
+                        <MenuItem 
+                            onClick={setCurrentItem} 
+                            id = {m.id}
+                            key={m.id} 
+                            href="#"
+                            isSelected={m.id === currentItem}
+                        >
+                            {m.text}
+                        </MenuItem>
+                    )
+                }              
+
             </ul>
         </aside>
     );

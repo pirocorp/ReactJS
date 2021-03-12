@@ -28,5 +28,9 @@
     color: #ffa000;
 }
 
+.menuItemSelected a {
+    background-color: lightskyblue;
+}
+
 /* Menu Item Styles */
 /* ------------------------------------------------------------------------------- */

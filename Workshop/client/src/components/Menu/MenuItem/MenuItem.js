@@ -2,11 +2,20 @@ import style from './MenuItem.module.css'
 
 function MenuItem({
     children,
-    href
+    onClick,
+    id,
+    href,
+    isSelected
 }){
+    let styles = [style.menuListItem];
+
+    if(isSelected){
+        styles.push(style.menuItemSelected);
+    } 
+
     return(
-        <li className={style.menuListItem}>
-            <a href={href}>
+        <li className={styles.join(' ')}>
+            <a href={href} onClick={() => onClick(id)}>
                 {children}
             </a>
         </li>

@@ -41,7 +41,8 @@ class App extends Component {
     render() {
         return (
             <div className={style.app}>            
-                <Header></Header>  
+                <Header /> 
+
                 <div className={style.container}>
                     <Menu
                         onMenuItemClick={this.onMenuItemClick.bind(this)}
@@ -49,7 +50,8 @@ class App extends Component {
                     <Main 
                         posts={ this.getPosts() }                        
                     />
-                </div>    
+                </div>  
+                  
                 <Footer/> 
             </div>        
         );

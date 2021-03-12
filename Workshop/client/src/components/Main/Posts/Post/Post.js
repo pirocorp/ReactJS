@@ -6,13 +6,13 @@ function Post({
 }) {
     return(
         <div className={style.post}>
-            <img src="/logo/logo.svg" alt="Origami"/>
+            <img src="/logo/blue-origami-bird.png" alt="Origami"/>
             <p className={style.description}>
                 {text}
             </p>
             <div>
                 <span>
-                    <small>Author:</small>
+                    <small>Author: </small>
                     {author}
                 </span>
             </div>

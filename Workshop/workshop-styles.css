@@ -1,11 +1,15 @@
 
-
-.Container {
+/* Container Styles*/
+.container {
     margin-top: 8.5%;
     padding: 0.5%;
     /* border: 1px solid purple; */
     margin-bottom: 0.1%;
 }
+
+/* Container Styles*/
+/* ------------------------------------------------------------------------------- */
+
 
 /* Link Styles */
 
@@ -27,8 +31,6 @@ footer .listItem {
 footer .listItem:nth-child(1) {
     margin-left: 1%;
 }
-
-
 
 footer .listItem:not(:last-child) {
     padding: 2%;

@@ -52,10 +52,11 @@ class App extends Component {
                     />
 
                     <Switch>
+                        {/* Route is a HOC */}
                         <Route path="/" exact>
                             <Main posts={this.getPosts()} />
                         </Route>
-                        <Route path="/about" component={About} />
+                        <Route path="/about/:name?" component={About} />
                         <Route path="/contact" component={Contact} />
                         <Route render={() => <h1>404 Not Found</h1>} />
                     </Switch>

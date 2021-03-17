@@ -5,9 +5,7 @@ function NavigationItem({
 }) {
     return(
         <li className={style.navigationListItem}>
-            <a>
-                {children}
-            </a>
+            {children}
         </li>
     );
 }

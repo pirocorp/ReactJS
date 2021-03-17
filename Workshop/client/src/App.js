@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import { Route, Link, NavLink, Redirect, Switch } from 'react-router-dom';
 
 import postService from './services/postsService';
 
@@ -6,6 +7,8 @@ import Header from './components/Header';
 import Menu from './components/Menu';
 import Main from './components/Main';
 import Footer from './components/Footer';
+import About from './components/About';
+import Contact from './components/Contact';
 
 import style from './App.module.css';
 
@@ -47,9 +50,15 @@ class App extends Component {
                     <Menu
                         onMenuItemClick={this.onMenuItemClick.bind(this)}
                     />
-                    <Main 
-                        posts={ this.getPosts() }                        
-                    />
+
+                    <Switch>
+                        <Route path="/" exact>
+                            <Main posts={this.getPosts()} />
+                        </Route>
+                        <Route path="/about" component={About} />
+                        <Route path="/contact" component={Contact} />
+                        <Route render={() => <h1>404 Not Found</h1>} />
+                    </Switch>
                 </div>  
                   
                 <Footer/> 

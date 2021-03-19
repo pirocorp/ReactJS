@@ -10,5 +10,10 @@
     border-top: 2px solid #ffa000;
 }
 
+.active {
+    background-color: red;
+    padding: 5px;
+}
+
 /* Header Navigation Styles*/
 /* ------------------------------------------------------------------------------- */

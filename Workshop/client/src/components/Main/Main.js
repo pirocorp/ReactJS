@@ -5,7 +5,7 @@ function Main({
     posts
 }) {
     return(
-        <main className={style.main}>
+        <main className="main-container">
             <h1>Some Heading</h1>
 
             <Posts posts={posts}></Posts>

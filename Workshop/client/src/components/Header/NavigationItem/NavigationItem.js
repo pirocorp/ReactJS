@@ -1,14 +1,11 @@
 import style from './NavigationItem.module.css';
 
 function NavigationItem({
-    children,
-    href
+    children
 }) {
     return(
         <li className={style.navigationListItem}>
-            <a href={href}>
-                {children}
-            </a>
+            {children}
         </li>
     );
 }

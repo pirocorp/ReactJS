@@ -5,6 +5,10 @@
     text-decoration: none;
 }
 
+.navigationListItem img{
+    height: 100px;
+}
+
 .navigationListItem {
     display: inline-block;
     height: auto;

@@ -1,0 +1,19 @@
+.dashboard nav{
+    background: transparent;
+}
+
+.dashboard>nav>ul {
+    display: flex;
+}
+
+.dashboard>nav>ul li:not(:last-child) {
+    padding-right: 1rem;
+}
+
+.dashboard .navbar {
+    justify-content: center;
+}
+
+.dashboard .nav-link-selected {
+    background-color: lightgreen;
+}

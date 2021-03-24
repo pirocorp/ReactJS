@@ -3,7 +3,7 @@ const baseUrl = "http://localhost:5000/pets";
 function getAll (category) { 
     let url = baseUrl;
 
-    if(category != 'all') {
+    if(category !== 'all') {
         url += category
             ? `?category=${category}` 
             : '';
@@ -22,7 +22,9 @@ function getPet(id) {
         .catch(err => console.log(err));  
 }
 
-export default {
+const petService = {
     getAll,
     getPet
 }
+
+export default petService;

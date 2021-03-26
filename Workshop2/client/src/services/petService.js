@@ -22,9 +22,28 @@ function getPet(id) {
         .catch(err => console.log(err));  
 }
 
+function create(name, description, imageURL, category) {
+    let pet = {
+        name,
+        description,
+        imageURL,
+        category
+    };
+
+    return fetch(baseUrl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(pet)
+    });
+}
+
 const petService = {
     getAll,
-    getPet
+    getPet,
+    create,
 }
+
 
 export default petService;

@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import petService from '../../services/petService';
 
 import CategoriesNavigation from './CategoryNavigation'
-import Pet from '../Pet'
+import PetCard from '../PetCard'
 
 function Categories({
     match    
@@ -35,7 +35,7 @@ function Categories({
 
         <ul className="other-pets-list">
             {pets.map(x => 
-                <Pet key={x.id} {...x} />
+                <PetCard key={x.id} {...x} />
             )}
         </ul>
     </section>

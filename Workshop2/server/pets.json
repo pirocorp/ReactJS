@@ -21,7 +21,7 @@
       "description": "This is my parrot Koko. He is one year old. He likes to sing a lot.",
       "imageURL": "https://cdn.omlet.co.uk/images/originals/fischer's-lovebird.jpg",
       "category": "Parrot",
-      "likes": "2",
+      "likes": 57,
       "_acl": {
         "creator": "5bb088003e67d9190597f9a6"
       },
@@ -110,13 +110,15 @@
       "description": "Very Cute",
       "imageURL": "https://i.ytimg.com/vi/SQJrYw1QvSQ/maxresdefault.jpg",
       "category": "Cat",
+      "likes": "0",
       "id": "i9p1NQw"
     },
     {
       "name": "Nebuchadnezzar",
-      "description": "Nebuchadnezzar II, also Nebuchadrezzar II, king of Babylon c. 605 BC – c. 562 BC, was the longest-reigning and most powerful monarch of the Neo-Babylonian Empire. ",
+      "description": "Nebuchadnezzar II most powerful king of Babylon.",
       "imageURL": "https://petsymptoms.com/wp-content/uploads/2017/09/portrait-persian-cat-7-months-old-persian-cats-ss-1.jpg",
       "category": "Cat",
+      "likes": 34,
       "id": "vhWIdjB"
     },
     {
@@ -124,7 +126,16 @@
       "description": "European Tabby",
       "imageURL": "https://c.files.bbci.co.uk/12A9B/production/_111434467_gettyimages-1143489763.jpg",
       "category": "Cat",
+      "likes": "0",
       "id": "YF549rK"
+    },
+    {
+      "name": "Koko",
+      "description": "This is my parrot Koko",
+      "imageURL": "https://www.freepngimg.com/thumb/parrot/2-parrot-png-images-download-thumb.png",
+      "category": "Parrot",
+      "likes": 3,
+      "id": "eAq8Y5a"
     }
   ]
 }

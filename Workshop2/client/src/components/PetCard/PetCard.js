@@ -1,8 +1,8 @@
-import './Pet.css';
+import './PetCard.css';
 
 import { Link } from 'react-router-dom';
 
-function Pet({
+function PetCard({
     id,
     name,
     category,
@@ -25,4 +25,4 @@ function Pet({
     );
 }
 
-export default Pet;
+export default PetCard;

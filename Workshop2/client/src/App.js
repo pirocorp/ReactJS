@@ -6,6 +6,8 @@ import Footer from './components/Footer';
 import Categories from './components/Categories';
 import PetDetails from './components/PetDetails';
 import CreatePet from './components/CreatePet';
+import PetEdit from './components/PetEdit';
+
 
 import UncontrolledDemo from './components/UncontrolledDemo';
 import ControlledDemo from './components/ControlledDemo/ControlledDemo';
@@ -20,6 +22,7 @@ function App() {
                 <Route path="/" exact component={ Categories } />
                 <Route path="/categories/:category" exact component={ Categories } />
                 <Route path="/pets/details/:petId" exact component={ PetDetails }/>
+                <Route path="/pets/details/:petId/edit" exact component={ PetEdit } />
                 <Route path="/pets/create" exact component={ CreatePet }></Route>
 
                 <Route path="/uncontrolled" exact component={ UncontrolledDemo }/>

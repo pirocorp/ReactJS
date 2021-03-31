@@ -11,7 +11,8 @@ import PetEdit from './components/PetEdit';
 
 import UncontrolledDemo from './components/UncontrolledDemo';
 import ControlledDemo from './components/ControlledDemo/ControlledDemo';
-import DemoFunc from './components/DemoFunc/DemoFunc';
+import DemoFunc from './components/DemoFunc';
+import DemoFunc2 from './components/DemoFunc2';
 
 function App() {
     return (
@@ -28,6 +29,7 @@ function App() {
                 <Route path="/uncontrolled" exact component={ UncontrolledDemo }/>
                 <Route path="/controlled" exact component={ ControlledDemo }/>
                 <Route path="/demo-func" exact component={ DemoFunc } />
+                <Route path="/demo-func2" exact component={ DemoFunc2 } />
             </Switch>
             <Footer />
         </div>

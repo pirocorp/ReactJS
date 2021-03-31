@@ -21,7 +21,7 @@ function DemoFunc2() {
             .then(res => res.json())
             .then(result => setCharacter(result));
 
-        // ComponentWillUnmount
+        // Clean up function
         return () => {
             console.log('ComponentWillUnmount');
         }

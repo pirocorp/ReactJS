@@ -311,6 +311,15 @@ form label {
 	content: '';
 }
 
+.btn {
+    padding: 5px 10px;
+}
+
+.ctx {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
 
 .field .input input {
 	border: none;

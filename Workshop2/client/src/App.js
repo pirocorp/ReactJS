@@ -13,6 +13,9 @@ import UncontrolledDemo from './components/UncontrolledDemo';
 import ControlledDemo from './components/ControlledDemo/ControlledDemo';
 import DemoFunc from './components/DemoFunc';
 import DemoFunc2 from './components/DemoFunc2';
+import AdvancedTechniques from './components/AdvancedTechniques/AdvancedTechniques';
+import AdvancedTechniques2 from './components/AdvancedTechniques2/AdvancedTechniques';
+import AdvancedTechniques3 from './components/AdvancedTechniques3/AdvancedTechniques';
 
 function App() {
     return (
@@ -30,6 +33,9 @@ function App() {
                 <Route path="/controlled" exact component={ ControlledDemo }/>
                 <Route path="/demo-func" exact component={ DemoFunc } />
                 <Route path="/demo-func2" exact component={ DemoFunc2 } />
+                <Route path="/advanced" exact component={ AdvancedTechniques } />
+                <Route path="/advanced2" exact component={ AdvancedTechniques2 } />
+                <Route path="/advanced3" exact component={ AdvancedTechniques3 } />
             </Switch>
             <Footer />
         </div>

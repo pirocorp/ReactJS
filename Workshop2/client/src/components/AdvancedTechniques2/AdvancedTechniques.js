@@ -1,8 +1,4 @@
-import React from 'react';
-
 import AdvancedApp from './AdvancedApp'
-
-const ThemeContext = React.createContext();
 
 function AdvancedTechniques() {
     return(

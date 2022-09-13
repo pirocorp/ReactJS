@@ -5,11 +5,11 @@
   "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "develop": "npx babel --watch src --out-file ./public/script.js --presets react-app/prod"
+    "develop": "npx babel --watch src --out-dir ./public/ --presets react-app/prod"
   },
   "author": "Zdravko Zdravkov",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-react-app": "^3.1.2"
   }

@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost:5000/pets";
+const baseUrl = "http://localhost:9000/pets";
 
 function getAll (category) { 
     let url = baseUrl;
@@ -76,6 +76,5 @@ const petService = {
     update,
     pet,
 }
-
 
 export default petService;

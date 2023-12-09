@@ -20,8 +20,7 @@ import AdvancedTechniques3 from './components/AdvancedTechniques3/AdvancedTechni
 function App() {
     return (
         <div id="container">
-            <Header />
-            
+            <Header />            
             <Switch>
                 <Route path="/" exact component={ Categories } />
                 <Route path="/categories/:category" exact component={ Categories } />

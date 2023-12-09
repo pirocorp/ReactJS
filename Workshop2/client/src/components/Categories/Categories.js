@@ -29,16 +29,16 @@ function Categories({
 
     return(
         <section className="dashboard">
-        <h1>Dashboard</h1>
+            <h1>Dashboard</h1>
 
-        <CategoriesNavigation />
+            <CategoriesNavigation />
 
-        <ul className="other-pets-list">
-            {pets.map(x => 
-                <PetCard key={x.id} {...x} />
-            )}
-        </ul>
-    </section>
+            <ul className="other-pets-list">
+                {pets.map(x => 
+                    <PetCard key={x.id} {...x} />
+                )}
+            </ul>
+        </section>
     );
 }
 

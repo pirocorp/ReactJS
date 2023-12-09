@@ -32,7 +32,6 @@ class ControlledDemo extends Component {
         e.preventDefault();
 
         if (this.state.username.length < 5) {
-            console.log('asdad');
             this.setState(state => 
                 ({errors: { ...state.errors, username: 'You name should be at least 5 characters long!'}}))
         } else {

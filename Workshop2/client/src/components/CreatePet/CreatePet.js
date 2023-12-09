@@ -23,7 +23,7 @@ function CreatePet({
 
     return (
         <section className="create">
-            <form action="#" method="post" onSubmit={onCreatePetSubmitHandler}>
+            <form onSubmit={onCreatePetSubmitHandler}>
                 <fieldset>
                     <legend>Add new Pet</legend>
                     <p className="field">
